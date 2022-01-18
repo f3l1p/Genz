@@ -1,0 +1,19 @@
+@import "./colors.scss";
+@import "../components/Navbar/Navbar.scss";
+@import "../components/Button/Button.scss";
+@import "../components/Card/Card.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/TitleSection/TitleSection.scss";
+@import "../sections/About/About.scss";
+@import "../sections/Contact/Contact.scss";
+@import "../sections/Home/Home.scss";
+@import "../sections/Process/Process.scss";
+@import "../sections/Solutions/Solutions.scss";
+@import "../sections/Tools/Tools.scss";
+@import "../sections/WhyGenz/WhyGenz.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

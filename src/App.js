@@ -1,17 +1,22 @@
 import React from "react";
-import "./App.css";
+import "./scss/index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { NavBar } from "./components/Navbar/Navbar";
 AOS.init();
 //COMPONENTS
 //card, navbar, footer => giovanni
 // title, button => felipe
 
 function App() {
-	return (
-		<div>
-			<h1>Ready?</h1>
-			{/* 
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <div>
+        <h1>Ready?</h1>
+        {/* 
 			<Navbar/> => giovanni
 			<Home/> => Felipe
 			<About/> => Felipe / Giovanni las cards
@@ -21,8 +26,9 @@ function App() {
 			<Tools/> => Giovanni
 			<Contact/> => Felipe // queda pendiente el form.
 			 */}
-		</div>
-	);
+      </div>
+    </>
+  );
 }
 
 export default App;
