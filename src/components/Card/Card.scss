@@ -1,0 +1,44 @@
+@import "../../scss/colors.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  .icon {
+    margin: 1rem;
+    .titleCard {
+      font-size: 1.7em;
+      background: -webkit-linear-gradient(-90deg, #0090e8 0%, #0de3ff 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+  }
+  .linearGradient {
+    padding: 1rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(180deg, #0090e8 0%, #ffffff 90%);
+    padding: 2px;
+    width: 25rem;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: $white;
+      border-radius: 1.25rem;
+      font-size: 1.5em;
+      padding: 2rem;
+      p {
+        margin: 0.8rem;
+      }
+      .line {
+        z-index: 1;
+        width: 5.625rem;
+        height: 2px;
+        border: 2px solid #0090e8;
+      }
+    }
+  }
+}

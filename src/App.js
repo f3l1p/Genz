@@ -3,6 +3,7 @@ import "./scss/index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { NavBar } from "./components/Navbar/Navbar";
+import { About } from "./sections/About/About";
 AOS.init();
 //COMPONENTS
 //card, navbar, footer => giovanni
@@ -27,6 +28,7 @@ function App() {
 			<Contact/> => Felipe // queda pendiente el form.
 			 */}
       </div>
+      <About />
     </>
   );
 }
