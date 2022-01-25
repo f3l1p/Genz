@@ -1,0 +1,32 @@
+@import "../../scss/breakpoints.scss";
+
+.process-section {
+	height: 100vh;
+
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		img {
+			margin: 100px;
+		}
+	}
+}
+
+@media (max-width: $breakpoint-l) {
+	.process-section {
+		height: 100vh;
+
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			img {
+				margin: 100px;
+				max-width: 80%;
+			}
+		}
+	}
+} ;
