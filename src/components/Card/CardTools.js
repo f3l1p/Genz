@@ -1,8 +1,8 @@
-export const Card = ({ info }) => {
+export const CardTools = ({ info }) => {
   return (
     <>
       <div className="card">
-        <img src={info.icon} alt="icon" className="icon" />
+        <img src={info.img} alt="icon" className="img" />
         <div className="iconDiv">
           <p className="titleCard">{info.title}</p>
         </div>

@@ -4,6 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { NavBar } from "./components/Navbar/Navbar";
 import { About } from "./sections/About/About";
+import { Solution } from "./sections/Solutions/Solutions";
+import { Tools } from "./sections/Tools/Tools";
+import { Footer } from "./components/Footer/Footer";
 AOS.init();
 //COMPONENTS
 //card, navbar, footer => giovanni
@@ -15,9 +18,8 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <div>
-        <h1>Ready?</h1>
-        {/* 
+
+      {/* 
 			<Navbar/> => giovanni
 			<Home/> => Felipe
 			<About/> => Felipe / Giovanni las cards
@@ -27,8 +29,10 @@ function App() {
 			<Tools/> => Giovanni
 			<Contact/> => Felipe // queda pendiente el form.
 			 */}
-      </div>
       <About />
+      <Solution />
+      <Tools />
+      <Footer />
     </>
   );
 }
