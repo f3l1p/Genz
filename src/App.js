@@ -10,21 +10,23 @@ import { Process } from "./sections/Process/Process";
 import { Solution } from "./sections/Solutions/Solutions";
 import { NavBar } from "./components/Navbar/Navbar";
 import { Tools } from "./sections/Tools/Tools";
+import { Footer } from "./components/Footer/Footer";
 
 AOS.init();
 
 function App() {
-	return (
-		<div>
-			<NavBar />
-			<Home />
-			<About />
-			<WhyGenz />
-			<Process />
-			<Solution />
-			<Tools />
-		</div>
-	);
+  return (
+    <div>
+      <NavBar />
+      <Home />
+      <About />
+      <WhyGenz />
+      <Solution />
+      <Process />
+      <Tools />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

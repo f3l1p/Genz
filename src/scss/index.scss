@@ -11,9 +11,12 @@
 @import "../sections/Solutions/Solutions.scss";
 @import "../sections/Tools/Tools.scss";
 @import "../sections/WhyGenz/WhyGenz.scss";
+// @import "../fonts/NunitoSans-Black.ttf";
+// @import "../fonts/NunitoSans-BlackItalic.ttf";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }

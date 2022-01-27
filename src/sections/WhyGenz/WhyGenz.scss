@@ -2,135 +2,107 @@
 @import "../../scss/breakpoints.scss";
 
 .section-why {
-	height: 80vh;
-	width: 100%;
+  background-image: url("../../assets/images/FondoGenz.PNG");
+  width: 100%;
+  .container-why {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .l-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .r-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: $white;
 
-	.back {
-		display: flex;
-		position: absolute;
-		height: 100%;
-		width: 100vw;
-		z-index: -1;
-		background: $gradientPrimary;
-		clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
-	}
-	.container-why {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
+      ul {
+        list-style: none;
+        margin-top: 12rem;
 
-		.l-col {
-			max-height: 300px;
-			// display: flex;
-			// flex-direction: column;
+        .list-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0.5rem;
 
-			img {
-				position: relative;
-				bottom: -56px;
-				max-width: 100%;
-				height: auto;
-			}
-		}
-		.r-col {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			color: white;
+          .check-icon {
+            margin-right: 0.5rem;
+            width: 2.5rem;
+          }
 
-			ul {
-				list-style: none;
-				margin-top: 150px;
+          .item {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
 
-				.list-item {
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					margin-bottom: 8px;
-
-					.check-icon {
-						margin-right: 8px;
-					}
-
-					.item {
-						display: flex;
-						font-size: 24px;
-					}
-				}
-			}
-		}
-	}
+@media only screen and (max-width: $breakpoint-xxl) {
+  .section-why {
+    .container-why {
+      .r-col {
+        width: 50%;
+        ul {
+          margin-top: 12rem;
+          .item {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $breakpoint-l) {
-	.section-why {
-		height: 125vh;
-		width: 100%;
+  .section-why {
+    width: 100%;
+    background: $gradientPrimary;
 
-		.title-container {
-			border-bottom: 4px solid white;
-			.title-name {
-				color: white;
-			}
-		}
+    .title-container {
+      border-bottom: 4px solid white;
+      .title-name {
+        color: white;
+      }
+    }
+    .container-why {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
 
-		.back {
-			display: flex;
-			position: absolute;
-			height: inherit;
-			width: 100vw;
-			z-index: -1;
-			background: $gradientPrimary;
-			clip-path: none;
-		}
-		.container-why {
-			display: flex;
-			flex-direction: column-reverse;
-			align-items: center;
+      .l-col {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        img {
+          width: 80%;
+        }
+      }
+      .r-col {
+        display: flex;
+        flex-direction: column;
+        color: white;
 
-			.l-col {
-				display: flex;
-				flex-direction: column;
-				justify-content: baseline;
-				align-content: center;
-				max-height: 300px;
-				max-width: 80%;
-
-				image {
-					position: relative;
-					bottom: -56px;
-					max-width: 100%;
-					height: auto;
-				}
-			}
-			.r-col {
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				color: white;
-				width: 80%;
-				margin-top: -100;
-
-				ul {
-					list-style: none;
-					margin-top: 60px;
-
-					.list-item {
-						display: flex;
-						flex-direction: row;
-						align-items: center;
-						margin-bottom: 8px;
-
-						.check-icon {
-							height: 2rem;
-							margin-right: 4px;
-						}
-						.item {
-							display: flex;
-							font-size: 1em;
-						}
-					}
-				}
-			}
-		}
-	}
+        ul {
+          margin-top: 1rem;
+          .list-item {
+            .check-icon {
+              height: 2rem;
+              margin-right: 0.25rem;
+            }
+            .item {
+              display: flex;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
 }

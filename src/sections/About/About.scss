@@ -1,73 +1,73 @@
 @import "../../scss/breakpoints.scss";
 
 .section-about {
-	text-align: center;
+  text-align: center;
 
-	.container-about {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+  .container-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-		div {
-			width: 40%;
-			height: auto;
-			margin: 4em;
-		}
+    div {
+      width: 40%;
+      height: auto;
+      margin: 4em;
+    }
 
-		.r-col {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			width: 600px;
+    .r-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 600px;
 
-			p {
-				margin-top: 3em;
-				font-size: 24px;
-			}
-		}
-	}
-	.sectionAbout {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-	}
+      p {
+        margin-top: 3em;
+        font-size: 24px;
+      }
+    }
+  }
+  .sectionAbout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: $breakpoint-l) {
-	.section-about {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		justify-content: center;
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 
-		.container-about {
-			margin-top: 40px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+    .container-about {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-			div {
-				width: 80%;
-				height: auto;
-				margin: 0;
-			}
+      div {
+        width: 80%;
+        height: auto;
+        margin: 0;
+      }
 
-			.image {
-				width: 80%;
-			}
+      .image {
+        width: 80%;
+      }
 
-			.r-col {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				width: 80%;
+      .r-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
 
-				p {
-					margin-top: 3em;
-					font-size: 24px;
-				}
-			}
-		}
-	}
+        p {
+          margin-top: 3em;
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }

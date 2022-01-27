@@ -2,7 +2,7 @@ import logoBlanco from "../../assets/logo/logo_Genz_blanco.svg";
 import iconMail from "../../assets/icons/icono_mailv_1.svg";
 import iconPhone from "../../assets/icons/icono_phonev_1.svg";
 import iconLocal from "../../assets/icons/icono_localv_1.svg";
-
+import iconWsp from "../../assets/icons/whatsapp_icono.svg";
 export const Footer = () => {
   return (
     <footer className="sectionFooter">
@@ -14,20 +14,19 @@ export const Footer = () => {
         <p>Genz 2022</p>
       </div>
       <div className="divList">
-        <ul>
-          <li>
-            <img src={iconMail} alt="icon-mail" />
-            contacto.genz@gmail.com
-          </li>
-          <li>
-            <img src={iconPhone} alt="icon-phone" />
-            +54 9 3534 59 7586
-          </li>
-          <li>
-            <img src={iconLocal} alt="icon-local" />
-            Córdoba, Argentina
-          </li>
-        </ul>
+        <div className="imgList">
+          <img src={iconMail} alt="icon-mail" />
+          <img src={iconPhone} alt="icon-phone" />
+          <img src={iconLocal} alt="icon-local" />
+        </div>
+        <div className="list">
+          <p>contacto.genz@gmail.com</p>
+          <p>+54 9 3534 59 7586</p>
+          <p>Córdoba, Argentina</p>
+        </div>
+      </div>
+      <div className="iconWsp">
+        <img src={iconWsp} alt="Whatsapp" />
       </div>
     </footer>
   );
