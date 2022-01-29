@@ -50,3 +50,19 @@ footer {
     height: auto;
   }
 }
+
+@media (max-width: $breakpoint-s) {
+  footer {
+    .logoBlanco {
+      width: 10rem;
+      margin: 1rem;
+    }
+    .divList {
+      margin: 1rem;
+    }
+    .iconWsp {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

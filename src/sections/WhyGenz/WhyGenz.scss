@@ -3,6 +3,7 @@
 
 .section-why {
   background-image: url("../../assets/images/FondoGenz.PNG");
+  // background-size: cover;
   width: 100%;
   .container-why {
     display: flex;
@@ -12,12 +13,17 @@
     .l-col {
       display: flex;
       flex-direction: column;
+      img {
+        width: 96%;
+      }
     }
     .r-col {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-end;
       color: $white;
+      font-weight: bold;
 
       ul {
         list-style: none;
@@ -59,15 +65,45 @@
   }
 }
 
+@media (max-width: $breakpoint-xl) {
+  .section-why {
+    .container-why {
+      .l-col {
+        // overflow: hidden;
+        img {
+          object-fit: contain;
+          // width: 93.8%;
+          // overflow: hidden;
+        }
+      }
+      .r-col {
+        // width: 50%;
+        ul {
+          margin-top: 9rem;
+          .item {
+            font-size: 1.2em;
+          }
+        }
+        .button-container {
+          margin: 0%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-l) {
   .section-why {
     width: 100%;
     background: $gradientPrimary;
 
     .title-container {
-      border-bottom: 4px solid white;
+      // border-bottom: 4px solid white;
       .title-name {
         color: white;
+      }
+      .line {
+        border: 2px solid $white;
       }
     }
     .container-why {
@@ -87,6 +123,8 @@
       .r-col {
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         color: white;
 
         ul {
@@ -99,6 +137,28 @@
             .item {
               display: flex;
               font-size: 1.2em;
+            }
+          }
+        }
+        .button-container {
+          width: 100%;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-s) {
+  .section-why {
+    .container-why {
+      .r-col {
+        ul {
+          .list-item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .item {
+              font-size: 1em;
             }
           }
         }

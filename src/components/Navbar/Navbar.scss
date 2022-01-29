@@ -30,7 +30,6 @@ header {
         &:hover {
           font-weight: bolder;
           color: $primary2;
-          border-top: 1px solid $primary2;
           border-bottom: 1px solid $primary2;
         }
       }
@@ -64,10 +63,14 @@ header {
         width: 100%;
         z-index: 1;
         flex-direction: column;
+        justify-content: space-evenly;
         transition: all 1s ease;
         background: -webkit-linear-gradient(to right, $primary, $primary2);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, $primary, $primary2);
+        a {
+          color: $white;
+        }
       }
       .menuResponsive {
         display: flex;

@@ -4,8 +4,23 @@ import Vector from "../../assets/images/Group MKT.svg";
 import { TitleSection } from "../../components/TitleSection/TitleSection";
 import { Card } from "../../components/Card/Card";
 import { AboutInfo } from "../About/AboutInfo";
+import { CardList } from "../../components/Card/CardList";
 
 export const About = () => {
+  const infoValores = [
+    {
+      id: "3",
+      title: "Valores",
+      icon: require("../../assets/icons/valores_icono.png"),
+      list: [
+        " Innovación ",
+        "Profesionalismo ",
+        "Compromiso ",
+        "Integridad ",
+        "Adaptabilidad ",
+      ],
+    },
+  ];
   return (
     <section className="section-about">
       <TitleSection title={"Sobre Genz"} />
@@ -25,7 +40,10 @@ export const About = () => {
       </div>
       <div className="sectionAbout">
         {AboutInfo.map((info) => (
-          <Card info={info} key={info.title} />
+          <Card info={info} key={info.id} />
+        ))}
+        {infoValores.map((info) => (
+          <CardList info={info} list={infoValores[0].list} key={info.id} />
         ))}
       </div>
     </section>

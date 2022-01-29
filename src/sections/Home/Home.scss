@@ -95,7 +95,7 @@
 }
 @media (max-width: $breakpoint-m) {
   .home-container {
-    height: 80vh;
+    height: 60vh;
     .images {
       .tablet {
         display: none;
@@ -125,14 +125,18 @@
     }
 
     .text-container {
-      width: 80%;
+      padding: 0%;
+      // width: 80%;
       height: 300px;
-      margin-top: 10%;
+      // margin-top: 10%;
       margin-left: 10%;
       margin-right: 10%;
 
       .text {
         width: 300px;
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
       }
     }
   }

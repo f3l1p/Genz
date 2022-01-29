@@ -1,3 +1,4 @@
+@import "../../scss/breakpoints.scss";
 .button-container {
   max-width: 300px;
   max-height: 63px;
@@ -20,3 +21,10 @@
     font-weight: 2px;
   }
 }
+
+@media (max-width: $breakpoint-s) {
+  .button-container {
+    width: auto;
+    max-width: none;
+  }
+} ;

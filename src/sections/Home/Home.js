@@ -19,7 +19,7 @@ export const Home = () => {
             digitalmente la gestión de tu negocio.
           </p>
         </div>
-        <MyButton buttonName="Conoce nuestros servicios" />
+        <MyButton buttonName="Conocé nuestros servicios" />
       </div>{" "}
       <div className="images">
         <img src={tablet} alt="tablet" className="tablet" id="tablet" />

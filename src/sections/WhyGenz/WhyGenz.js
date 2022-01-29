@@ -32,7 +32,7 @@ export const WhyGenz = () => {
 
   return (
     <section className="section-why">
-      <TitleSection title="¿Por que elegirnos?" />
+      <TitleSection title="¿Por qué elegirnos?" />
       <div className="container-why">
         <div className="l-col">
           <img className="image" src={ima} alt="imagen-elegirnos" />
