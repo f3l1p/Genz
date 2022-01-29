@@ -1,5 +1,5 @@
 @import "../../scss/colors.scss";
-
+@import "../../scss/breakpoints.scss";
 .card {
   display: flex;
   flex-direction: column;
@@ -44,6 +44,28 @@
         width: 5.625rem;
         height: 2px;
         border: 2px solid $primary;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-xs) {
+  .card {
+    .icon {
+      width: 2.0625rem;
+      height: 2.0625rem;
+    }
+    .img {
+      width: 15rem;
+    }
+    .iconDiv {
+      .titleCard {
+        font-size: 1.5em;
+      }
+    }
+    .linearGradient {
+      width: 15rem;
+      .text {
+        font-size: 1em;
       }
     }
   }

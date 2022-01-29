@@ -1,7 +1,7 @@
 .button-container {
   max-width: 300px;
   max-height: 63px;
-  width: 80%;
+  width: 50%;
   margin-top: 1rem;
 
   display: flex;
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
 
+  cursor: pointer;
   color: white;
   border-radius: 6px;
   background: linear-gradient(180deg, #0090e8 0%, #0de3ff 100%);

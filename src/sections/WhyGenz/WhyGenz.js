@@ -4,7 +4,7 @@ import "./WhyGenz.scss";
 import check from "../../assets/icons/checkmark-circle-outline.svg";
 import ima from "../../assets/images/elegirnos2.png";
 import { TitleSection } from "../../components/TitleSection/TitleSection";
-import MyButton from "../../components/Button/Button";
+import { MyButton } from "../../components/Button/Button";
 
 export const WhyGenz = () => {
   const db = [
@@ -19,7 +19,7 @@ export const WhyGenz = () => {
 
   const listItems = db.map((item) => {
     return (
-      <div className="list-item">
+      <div className="list-item" key={item}>
         <img src={check} alt="check-icon" className="check-icon" />
         <li className="item" key={db[0].slice(0, 1)}>
           {item}
