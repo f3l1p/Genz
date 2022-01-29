@@ -11,22 +11,23 @@ import { Solution } from "./sections/Solutions/Solutions";
 import { NavBar } from "./components/Navbar/Navbar";
 import { Tools } from "./sections/Tools/Tools";
 import { Footer } from "./components/Footer/Footer";
-
+import { Contact } from "./sections/Contact/Contact";
 AOS.init();
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <WhyGenz />
-      <Solution />
-      <Process />
-      <Tools />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<NavBar />
+			<Home />
+			<About />
+			<WhyGenz />
+			<Solution />
+			<Process />
+			<Tools />
+			<Contact />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
