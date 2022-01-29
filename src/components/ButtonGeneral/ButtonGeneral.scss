@@ -1,0 +1,15 @@
+@import "../../scss/colors.scss";
+
+.button-general {
+	color: white;
+	background-color: $primary3;
+	text-align: center;
+	border-radius: 10px;
+	border-width: 0px;
+	font-weight: bold;
+
+	p {
+		font-weight: bold;
+		font-size: 24px;
+	}
+}

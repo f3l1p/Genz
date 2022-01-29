@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik } from "formik";
+import { ButtonGeneral } from "../../components/ButtonGeneral/ButtonGeneral";
 
 export const GenzForm = () => (
 	<div>
@@ -25,7 +26,8 @@ export const GenzForm = () => (
 			}}
 			onSubmit={(values, { setSubmitting }) => {
 				setTimeout(() => {
-					alert(JSON.stringify(values, null, 2));
+					alert("Tu consulta se envió correctamente.");
+					//alert(JSON.stringify(values, null, 2));
 					setSubmitting(false);
 				}, 400);
 			}}
@@ -105,9 +107,14 @@ export const GenzForm = () => (
 							{errors.consulta && touched.consulta && errors.consulta}
 						</div>
 					</div>
-					<button className="button" type="submit" disabled={isSubmitting}>
-						Enviar
-					</button>
+					<div className="button">
+						<ButtonGeneral
+							type="submit"
+							disabled={isSubmitting}
+							buttonName="Enviar"
+							style={{ width: "110px", height: "63px", padding: "15px, 20px" }}
+						/>
+					</div>
 				</form>
 			)}
 		</Formik>

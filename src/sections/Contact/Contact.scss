@@ -1,12 +1,17 @@
+@import "../../scss/colors.scss";
+
 .contactSection {
 	background-image: url("../../assets/images/FondoGenz.PNG");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+	margin-top: 80px;
+	padding-bottom: 80px;
 
 	.container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 
 		margin-top: 60px;
 
@@ -18,6 +23,7 @@
 			.inputContainer {
 				display: flex;
 				flex-direction: row;
+				//flex-wrap: wrap;
 				justify-content: flex-end;
 				margin: 20px;
 
@@ -32,7 +38,8 @@
 						border-radius: 10px;
 						width: 290px;
 						height: 48px;
-						border-width: 0px;
+
+						border: 1px solid $primary2;
 						margin-right: 30px;
 					}
 				}
@@ -42,13 +49,14 @@
 						height: 344px;
 						resize: none;
 						border-radius: 8px;
-						border-width: 0px;
+						border: 1px solid $primary2;
+						padding: 10px 14px;
 					}
 				}
 			}
 			.button {
 				height: 63px;
-				width: 110px;
+				width: fit-content;
 				// left: 808px;
 				// top: 581px;
 				border-radius: 6px;
