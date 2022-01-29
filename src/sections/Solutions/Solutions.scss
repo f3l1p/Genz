@@ -1,9 +1,10 @@
 .sectionSolutions {
-  .divCardsSolutions {
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 90%;
-  }
+	margin-top: 60px;
+	.divCardsSolutions {
+		margin: 80px auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		width: 90%;
+	}
 }

@@ -25,10 +25,10 @@ export const About = () => {
     <section className="section-about">
       <TitleSection title={"Sobre Genz"} />
       <div className="container-about">
-        <div className="l-col">
+        <div className="l-col" data-aos="fade-up" data-aos-duration="1000">
           <img className="image" src={Vector} alt="img-about" />
         </div>
-        <div className="r-col">
+        <div className="r-col" data-aos="fade-up" data-aos-duration="3000">
           <p>
             <strong>GENZ</strong> nace como un proyecto para ofrecer a la
             industria y el comercio la posibilidad de innovar a través del uso

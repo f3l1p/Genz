@@ -4,7 +4,7 @@ import "./WhyGenz.scss";
 import check from "../../assets/icons/checkmark-circle-outline.svg";
 import ima from "../../assets/images/elegirnos2.png";
 import { TitleSection } from "../../components/TitleSection/TitleSection";
-import { MyButton } from "../../components/Button/Button";
+import { ButtonGeneral } from "../../components/ButtonGeneral/ButtonGeneral";
 
 export const WhyGenz = () => {
   const db = [
@@ -32,14 +32,17 @@ export const WhyGenz = () => {
 
   return (
     <section className="section-why">
-      <TitleSection title="¿Por qué elegirnos?" />
+      <TitleSection title="¿Por que elegirnos?" />
       <div className="container-why">
-        <div className="l-col">
+        <div className="l-col" data-aos="fade-right" data-aos-duration="2000">
           <img className="image" src={ima} alt="imagen-elegirnos" />
         </div>
-        <div className="r-col">
+        <div className="r-col" data-aos="fade-left" data-aos-duration="2000">
           <ul>{listItems}</ul>
-          <MyButton buttonName={"Realizá tu consulta"} />
+          <ButtonGeneral
+            buttonName={"Realizá tu consulta"}
+            style={{ width: "309px", height: "64px", padding: "15px, 20px" }}
+          />
         </div>
       </div>
     </section>

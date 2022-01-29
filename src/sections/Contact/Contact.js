@@ -12,7 +12,7 @@ export const Contact = () => {
 					<GenzForm />
 				</div>
 				<div className="info">
-					<p>¡Contactanos!</p>
+					<p style={{ fontWeight: "bold" }}>¡Contactanos!</p>
 					<p>
 						Cada vez más cerca de la <strong>transformación digital</strong> de
 						tu empresa
