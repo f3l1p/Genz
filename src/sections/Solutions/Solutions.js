@@ -9,7 +9,7 @@ export const Solution = () => {
 			data-aos="fade-up"
 			data-aos-duration="3000"
 		>
-			<TitleSection title={"Nuestras Soluciones"} />
+			<TitleSection id="solutions" title={"Nuestras Soluciones"} />
 			<div className="divCardsSolutions">
 				{SolutionsInfo.map((info) => (
 					<Card info={info} key={info.title} />
