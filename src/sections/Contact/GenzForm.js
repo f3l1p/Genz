@@ -156,11 +156,6 @@ export const GenzForm = () => {
                 type="submit"
                 disabled={isSubmitting}
                 buttonName="Enviar"
-                style={{
-                  width: "100%",
-                  height: "63px",
-                  padding: "15px, 20px",
-                }}
               />
             </div>
           </form>

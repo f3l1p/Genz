@@ -1,101 +1,101 @@
 @import "../../scss/colors.scss";
 @import "../../scss/breakpoints.scss";
 header {
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
-	.navBar {
-		padding: 2.25rem 6.25rem;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		.logo {
-			width: 12rem;
-		}
-		.linksMenu {
-			display: flex;
-			width: 50%;
-			justify-content: space-around;
-			align-items: center;
-			a {
-				font-size: 1.5em;
-				padding: 0.25rem;
-				transition: 0.2s;
-				color: $black;
-				text-decoration: none;
-				border-top: 1px solid transparent;
-				border-bottom: 1px solid transparent;
-				&:hover {
-					font-weight: bolder;
-					color: $primary2;
-					border-bottom: 1px solid $primary2;
-				}
-			}
-		}
-		.menuResponsive {
-			display: none;
-			color: $primary;
-		}
-	}
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  .navBar {
+    padding: 2.25rem 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo {
+      width: 12rem;
+    }
+    .linksMenu {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      align-items: center;
+      .links {
+        font-size: 1.5em;
+        padding: 0.25rem;
+        transition: 0.2s;
+        color: $black;
+        text-decoration: none;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          font-weight: bolder;
+          color: $primary2;
+          border-bottom: 1px solid $primary2;
+        }
+      }
+    }
+    .menuResponsive {
+      display: none;
+      color: $primary;
+    }
+  }
 }
 @media only screen and (max-width: $breakpoint-xl) {
-	header {
-		.navBar {
-			.linksMenu {
-				width: auto;
-			}
-		}
-	}
+  header {
+    .navBar {
+      .linksMenu {
+        width: auto;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 960px) {
-	header {
-		.navBar {
-			padding: 0;
-			.logo {
-				margin: 1rem;
-			}
-			.linksMenu {
-				position: fixed;
-				height: 100vh;
-				right: 0;
-				width: 100%;
-				z-index: 1;
-				flex-direction: column;
-				justify-content: space-evenly;
-				transition: all 1s ease;
-				background: -webkit-linear-gradient(to right, $primary, $primary2);
-				/* Chrome 10-25, Safari 5.1-6 */
-				background: linear-gradient(to right, $primary, $primary2);
-				a {
-					color: $white;
-				}
-			}
-			.menuResponsive {
-				display: flex;
-				justify-content: center;
-				height: 5.375rem;
-				align-items: center;
-				color: $primary3;
-				background: transparent;
-				z-index: 100;
-				cursor: pointer;
-				padding: 1.25rem;
-				margin-right: 2.5rem;
-				font-size: 1.8rem;
-				&:active {
-					color: $white;
-				}
-			}
-			.one {
-				-webkit-clip-path: circle(0% at 100% 0%);
-				clip-path: circle(0% at 100% 0%);
-			}
-			.two {
-				-webkit-clip-path: circle(150% at 100% 0%);
-				clip-path: circle(150% at 100% 0%);
-			}
-		}
-	}
+  header {
+    .navBar {
+      padding: 0;
+      .logo {
+        margin: 1rem;
+      }
+      .linksMenu {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: all 1s ease;
+        background: -webkit-linear-gradient(to right, $primary, $primary2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, $primary, $primary2);
+        a {
+          color: $white;
+        }
+      }
+      .menuResponsive {
+        display: flex;
+        justify-content: center;
+        height: 5.375rem;
+        align-items: center;
+        color: $primary3;
+        background: transparent;
+        z-index: 100;
+        cursor: pointer;
+        padding: 1.25rem;
+        margin-right: 2.5rem;
+        font-size: 1.8rem;
+        &:active {
+          color: $white;
+        }
+      }
+      .one {
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+      }
+      .two {
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+      }
+    }
+  }
 }
