@@ -6,7 +6,7 @@ import { GenzForm } from "./GenzForm";
 export const Contact = () => {
   return (
     <section className="contactSection">
-      <TitleSection title="Contacto" className="title" />
+      <TitleSection id="contact" title="Contacto" className="title" />
       <div className="container-form">
         <div className="form">
           <GenzForm />

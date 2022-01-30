@@ -4,7 +4,7 @@ import Vector from "../../assets/images/Group MKT.svg";
 import { TitleSection } from "../../components/TitleSection/TitleSection";
 import { Card } from "../../components/Card/Card";
 import { AboutInfo } from "../About/AboutInfo";
-import { ListAbout } from "../../components/Card/ListAbout";
+import { ListCard } from "../../../components/ListCard/ListCard";
 
 export const About = () => {
   const infoValores = [
@@ -23,7 +23,7 @@ export const About = () => {
   ];
   return (
     <section className="section-about">
-      <TitleSection title={"Sobre Genz"} />
+      <TitleSection id="about" title={"Sobre Genz"} />
       <div className="container-about">
         <div className="l-col" data-aos="fade-up" data-aos-duration="1000">
           <img className="image" src={Vector} alt="img-about" />
@@ -43,7 +43,7 @@ export const About = () => {
           <Card info={info} key={info.id} />
         ))}
         {infoValores.map((info) => (
-          <ListAbout info={info} list={infoValores[0].list} key={info.id} />
+          <ListCard info={info} list={infoValores[0].list} key={info.id} />
         ))}
       </div>
     </section>

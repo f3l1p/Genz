@@ -9,7 +9,7 @@ import { ListCard } from "../../components/ListCard/ListCard";
 export const Process = () => {
   return (
     <section className="process-section">
-      <TitleSection title="Procesos de trabajo" />
+      <TitleSection id="process" title="Procesos de trabajo" />
       <div className="image-container">
         <img src={ima} alt="elipses-secuential" />
       </div>
