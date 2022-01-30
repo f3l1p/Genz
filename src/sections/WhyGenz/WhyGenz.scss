@@ -3,6 +3,7 @@
 
 .section-why {
   background-image: url("../../assets/images/FondoGenz.PNG");
+  background-repeat: no-repeat;
   // background-size: cover;
   width: 100%;
   .container-why {
@@ -69,11 +70,9 @@
   .section-why {
     .container-why {
       .l-col {
-        // overflow: hidden;
         img {
           object-fit: contain;
           // width: 93.8%;
-          // overflow: hidden;
         }
       }
       .r-col {

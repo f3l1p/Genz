@@ -1,31 +1,31 @@
 @import "../../scss/colors.scss";
+@import "../../scss/breakpoints.scss";
 
 .contactSection {
-  background-image: url("../../assets/images/FondoGenzFlip.png");
+  background-image: url("../../assets/images/FondoGenzFlip(2).png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   margin-top: 80px;
   padding-bottom: 80px;
 
-  .container {
+  .container-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
-    margin-top: 60px;
+    margin-top: 10rem;
 
     .form {
       display: flex;
       flex-direction: column;
       align-content: flex-end;
+      margin: 1rem;
 
       .inputContainer {
         display: flex;
         flex-direction: row;
-        //flex-wrap: wrap;
         justify-content: flex-end;
-        margin: 20px;
 
         .col-l {
           display: flex;
@@ -38,7 +38,6 @@
             border-radius: 10px;
             width: 290px;
             height: 48px;
-
             border: 1px solid $primary2;
             margin-right: 30px;
           }
@@ -71,10 +70,85 @@
       flex-direction: column;
       justify-content: center;
       color: white;
+      margin: 2rem;
 
       p {
         font-size: 24px;
-        width: 70%;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-l) {
+  .contactSection {
+    background: $gradientPrimary;
+    width: 100%;
+    .container {
+      .title-container {
+        .title-name {
+          color: $white;
+        }
+        .line {
+          display: block;
+          width: 90px;
+
+          border-top: 4px solid $white;
+        }
+      }
+    }
+    .container-form {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 5rem;
+      .form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .inputContainer {
+          flex-direction: column;
+          justify-content: center;
+          .col-l {
+            align-items: center;
+            width: 100%;
+            // margin: 1rem;
+            input {
+              margin: 1rem;
+              width: 100%;
+            }
+          }
+          .col-r {
+            textarea {
+              margin-top: 1rem;
+              // width: 100%;
+            }
+          }
+        }
+        .button {
+          width: 100%;
+          align-self: center;
+        }
+      }
+      .info {
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-s) {
+  .contactSection {
+    .container-form {
+      .form {
+        .inputContainer {
+          .col-r {
+            textarea {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

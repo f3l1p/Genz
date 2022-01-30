@@ -4,7 +4,7 @@ import Vector from "../../assets/images/Group MKT.svg";
 import { TitleSection } from "../../components/TitleSection/TitleSection";
 import { Card } from "../../components/Card/Card";
 import { AboutInfo } from "../About/AboutInfo";
-import { CardList } from "../../components/Card/CardList";
+import { ListAbout } from "../../components/Card/ListAbout";
 
 export const About = () => {
   const infoValores = [
@@ -43,7 +43,7 @@ export const About = () => {
           <Card info={info} key={info.id} />
         ))}
         {infoValores.map((info) => (
-          <CardList info={info} list={infoValores[0].list} key={info.id} />
+          <ListAbout info={info} list={infoValores[0].list} key={info.id} />
         ))}
       </div>
     </section>

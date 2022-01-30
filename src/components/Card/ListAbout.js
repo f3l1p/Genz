@@ -1,4 +1,4 @@
-export const CardList = ({ info, list }) => {
+export const ListAbout = ({ info, list }) => {
   const listItem = list.map((text) => <li>{text}</li>);
   return (
     <div className="card">
@@ -10,7 +10,7 @@ export const CardList = ({ info, list }) => {
       <div className="linearGradient">
         <div className="text">
           <div className="line"></div>
-          <ul>{listItem}</ul>
+          <ul className="list">{listItem}</ul>
         </div>
       </div>
     </div>
