@@ -84,7 +84,7 @@ export const FormG = () => {
 			>
 				<h1
 					style={{
-						background: "black",
+						background: "#0A0A0A5C",
 						color: "white",
 						textAlign: "center",
 						padding: "18px 28px",
