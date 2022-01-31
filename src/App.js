@@ -15,19 +15,19 @@ import { Contact } from "./sections/Contact/Contact";
 AOS.init();
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <WhyGenz />
-      <Solution />
-      <Process />
-      <Tools />
-      <Contact />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<NavBar />
+			<Home />
+			<About />
+			<WhyGenz />
+			<Solution />
+			<Process />
+			<Tools />
+			<Contact />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
