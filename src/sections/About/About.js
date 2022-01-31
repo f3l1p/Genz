@@ -23,13 +23,15 @@ export const About = () => {
     },
   ];
   return (
+    // data - aos= "fade-up" data - aos - duration="1000"
+    //   data-aos="fade-up" data-aos-duration="3000"
     <section className="section-about">
       <TitleSection id="about" title={"Sobre Genz"} />
       <div className="container-about">
-        <div className="l-col" data-aos="fade-up" data-aos-duration="1000">
+        <div className="l-col">
           <img className="image" src={Vector} alt="img-about" />
         </div>
-        <div className="r-col" data-aos="fade-up" data-aos-duration="3000">
+        <div className="r-col">
           <p>
             <strong>GENZ</strong> nace como un proyecto para ofrecer a la
             industria y el comercio la posibilidad de innovar a través del uso
