@@ -1,49 +1,49 @@
 @import "../../scss/colors.scss";
 @import "../../scss/breakpoints.scss";
 .sectionTools {
-	margin-top: 80px;
-	.toolsCards {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		margin: 1rem;
-	}
-	.videoAndText {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		div {
-			padding: 1rem;
-		}
-		.video {
-			width: 50rem;
-			.react-player {
-				border-radius: 10%;
-				overflow: hidden;
-			}
-		}
-		.text {
-			width: 34.375rem;
-			font-size: 1.5em;
-			line-height: 1.5em;
-			.line {
-				margin: 1rem 0rem 1.5rem 0rem;
-				padding: 0%;
-				width: 8.625rem;
-				height: 2px;
-				border: 2px solid $primary;
-			}
-		}
-	}
+  margin-top: 80px;
+  .toolsCards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .videoAndText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    div {
+      padding: 1rem;
+    }
+    .video {
+      width: 50rem;
+      .react-player {
+        border-radius: 10%;
+        overflow: hidden;
+      }
+    }
+    .text {
+      width: 34.375rem;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      .line {
+        margin: 1rem 0rem 1.5rem 0rem;
+        padding: 0%;
+        width: 8.625rem;
+        height: 2px;
+        border: 2px solid $primary;
+      }
+    }
+  }
 }
 @media (max-width: $breakpoint-s) {
-	.sectionTools {
-		.videoAndText {
-			.text {
-				width: 34.375rem;
-				font-size: 1em;
-				line-height: 1em;
-			}
-		}
-	}
+  .sectionTools {
+    .videoAndText {
+      .text {
+        width: 34.375rem;
+        font-size: 1em;
+        line-height: 1em;
+      }
+    }
+  }
 } ;
