@@ -1,19 +1,15 @@
 import React from "react";
 import "./ButtonGeneral.scss";
 
-export const ButtonGeneral = ({
-	buttonName,
-	onClick,
-	style,
-	disabled,
-	type,
-}) => (
-	<button
-		type={type}
-		style={style}
-		className="button-general"
-		onClick={onClick}
-	>
-		<p>{buttonName}</p>
-	</button>
-);
+export const ButtonGeneral = ({ buttonName, disabled, type, style }) => {
+  return (
+    <button
+      type={type}
+      className="button-general"
+      style={style}
+      disabled={disabled}
+    >
+      <p>{buttonName}</p>
+    </button>
+  );
+};

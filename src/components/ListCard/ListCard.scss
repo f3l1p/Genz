@@ -3,6 +3,7 @@
 .list-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 10px 20px;
 
   .title-container {
@@ -73,6 +74,7 @@
         display: block;
         font-size: 1.5em;
         color: $primary3;
+        text-align: center;
       }
     }
 
@@ -97,6 +99,7 @@
       }
     }
     .list-container-list {
+      width: 15rem;
       .list {
         .item {
           font-size: 16px;

@@ -15,7 +15,12 @@
     // flex-wrap: wrap;
 
     margin-top: 10rem;
-
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .form {
       display: flex;
       flex-direction: column;
@@ -40,6 +45,9 @@
             height: 48px;
             border: 1px solid $primary2;
             margin-right: 30px;
+            &:focus {
+              outline: 2px solid $primary2;
+            }
           }
         }
         .col-r {
@@ -50,6 +58,9 @@
             border-radius: 8px;
             border: 1px solid $primary2;
             padding: 10px 14px;
+            &:focus {
+              outline: 2px solid $primary2;
+            }
           }
         }
       }
@@ -145,6 +156,8 @@
   .contactSection {
     .container-form {
       .form {
+        width: 90%;
+        align-content: center;
         .inputContainer {
           .col-r {
             textarea {
