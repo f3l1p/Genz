@@ -51,6 +51,14 @@ footer {
     padding: 2rem;
   }
 }
+@media (max-width: $breakpoint-m) {
+  footer {
+    .iconWsp {
+      width: 3rem;
+      height: 2rem;
+    }
+  }
+}
 
 @media (max-width: $breakpoint-s) {
   footer {

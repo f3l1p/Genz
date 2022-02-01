@@ -57,6 +57,21 @@
   }
 }
 
+@media (max-width: $breakpoint-xxl) {
+  .home-container {
+    .images {
+      .tablet {
+        transition: 0.5s;
+        top: 50%;
+      }
+      .hero {
+        transition: 0.5s;
+        right: 0%;
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-xl) {
   .home-container {
     .images {
