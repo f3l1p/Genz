@@ -20,13 +20,18 @@ export const Footer = () => {
           <img src={iconLocal} alt="icon-local" />
         </div>
         <div className="list">
-          <p>contacto.genz@gmail.com</p>
+          <p>genz.comercial@gmail.com</p>
           <p>+54 9 3534 59 7586</p>
           <p>Córdoba, Argentina</p>
         </div>
       </div>
       <div className="iconWsp">
-        <img src={iconWsp} alt="Whatsapp" />
+        <a
+          href="https://api.whatsapp.com/send?phone=543534597586&text=Me%20interesar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20los%20servicios%20que%20GENZ%20brinda"
+          target="blank"
+        >
+          <img src={iconWsp} alt="Whatsapp" />
+        </a>
       </div>
     </footer>
   );
