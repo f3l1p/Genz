@@ -35,7 +35,7 @@
   }
 }
 
-@media (max-width: $breakpoint-l) {
+@media only screen and (max-width: $breakpoint-l) {
   .section-about {
     display: flex;
     flex-direction: column;

@@ -51,7 +51,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-xs) {
+@media only screen and (max-width: $breakpoint-xs) {
   .card {
     .icon {
       width: 2.0625rem;

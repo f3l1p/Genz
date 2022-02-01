@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: $breakpoint-l) {
+@media only screen and (max-width: $breakpoint-l) {
   .process-section {
     // height: 100vh;
 
@@ -49,7 +49,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-m) {
   .process-section {
     .image-container {
       display: none;

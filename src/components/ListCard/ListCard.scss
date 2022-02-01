@@ -41,7 +41,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-l) {
+@media only screen and (max-width: $breakpoint-l) {
   .list-card {
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-m) {
   .list-card {
     .title-container {
       display: flex;
@@ -91,7 +91,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-s) {
+@media only screen and (max-width: $breakpoint-s) {
   .list-card {
     .title-container {
       .imagen-procesos {

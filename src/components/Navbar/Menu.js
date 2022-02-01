@@ -21,7 +21,7 @@ export const Menu = ({ className }) => {
         spy={true}
         smooth={true}
       >
-        ¿Quiénes Somos?
+        Nosotros
       </Link>
 
       <Link

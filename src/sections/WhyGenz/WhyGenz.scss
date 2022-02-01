@@ -66,7 +66,7 @@
   }
 }
 
-@media (max-width: $breakpoint-xl) {
+@media only screen and (max-width: $breakpoint-xl) {
   .section-why {
     .container-why {
       .l-col {
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: $breakpoint-l) {
+@media only screen and (max-width: $breakpoint-l) {
   .section-why {
     width: 100%;
     background: $gradientPrimary;
@@ -147,7 +147,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-s) {
+@media only screen and (max-width: $breakpoint-s) {
   .section-why {
     .container-why {
       .r-col {

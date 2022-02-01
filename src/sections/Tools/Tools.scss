@@ -36,7 +36,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-s) {
+@media only screen and (max-width: $breakpoint-s) {
   .sectionTools {
     .videoAndText {
       .text {

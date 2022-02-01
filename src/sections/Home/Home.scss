@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: $breakpoint-xl) {
+@media only screen and (max-width: $breakpoint-xl) {
   .home-container {
     .images {
       .tablet {
@@ -86,7 +86,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-l) {
+@media only screen and (max-width: $breakpoint-l) {
   .home-container {
     justify-content: center;
     .text-container {
@@ -108,7 +108,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-m) {
+@media only screen and (max-width: $breakpoint-m) {
   .home-container {
     height: 60vh;
     .images {
@@ -118,7 +118,7 @@
     }
   }
 }
-@media (max-width: $breakpoint-xs) {
+@media only screen and (max-width: $breakpoint-xs) {
   .home-container {
     .title {
       margin-top: 20%;

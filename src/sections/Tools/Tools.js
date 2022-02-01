@@ -6,11 +6,6 @@ export const Tools = () => {
   return (
     <section id="tools" className="sectionTools">
       <TitleSection title={"Herramientas"} />
-      <div className="toolsCards">
-        {ToolsInfo.map((info) => (
-          <CardTools info={info} key={info.id} />
-        ))}
-      </div>
       <div className="videoAndText">
         <div className="video">
           <ReactPlayer
@@ -33,6 +28,11 @@ export const Tools = () => {
             análisis de negocio.
           </p>
         </div>
+      </div>
+      <div className="toolsCards">
+        {ToolsInfo.map((info) => (
+          <CardTools info={info} key={info.id} />
+        ))}
       </div>
     </section>
   );
